@@ -1,0 +1,76 @@
+:root {
+    --primary-color-text: #212121;
+    --secondary-color-text: #757575;
+    --white-color-text: #FFFFFF;
+    --hover-color-text: #2196F3;
+    --hero-footer-background-color: #2F303A;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: var(--primary-color-text);
+    
+}
+
+p {
+    color: var(--secondary-color-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+.logo {
+    color: #000000;
+}
+
+.logo .first-text{
+    color: var(--hover-color-text);
+}
+
+.header .link {
+    color: var(--primary-color-text);
+}
+
+.address .link {
+    color: var(--secondary-color-text);
+}
+
+.header .link:hover,
+.address .link:hover {
+    color: var(--hover-color-text);
+}
+
+
+
+/* Main block */
+
+/* Hero */
+
+.hero {
+    background-color: var(--hero-footer-background-color);
+}
+
+.hero .title{
+    color: var(--white-color-text);
+}
+
+.hero .link{
+    background-color: var(--hover-color-text);
+    color: var(--white-color-text);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--hero-footer-background-color);
+}
+
+.logo {
+    color: var(--white-color-text);
+}
+
+.address .street {
+    color: var(--white-color-text);
+}
