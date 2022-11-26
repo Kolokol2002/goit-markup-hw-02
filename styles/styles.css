@@ -98,7 +98,7 @@ li {
 /* Hero */
 .hero-section {
     background-color: var(--hero-footer-background-color);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.0em;
 }
 
 .hero-title{
@@ -188,6 +188,7 @@ li {
     line-height: 1.62;
     text-align: center;
     border: none;
+    cursor: pointer
 }
 
 .portfolio-button:hover,
