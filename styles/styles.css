@@ -13,6 +13,7 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-color-text);
     font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 
@@ -73,6 +74,7 @@ li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .address.link {
@@ -81,6 +83,7 @@ li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .link:hover,
@@ -95,6 +98,7 @@ li {
 /* Hero */
 .hero-section {
     background-color: var(--hero-footer-background-color);
+    letter-spacing: 0.06em;
 }
 
 .hero-title{
@@ -183,6 +187,7 @@ li {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border: none;
 }
 
 .portfolio-button:hover,
@@ -196,6 +201,7 @@ li {
     color: var(--primary-color-text);
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .card-subtitle {
