@@ -2,10 +2,11 @@
     --primary-color-text: #212121;
     --secondary-color-text: #757575;
     --white-color-text: #FFFFFF;
-    --hover-color-text: #2196F3;
+    --accent-color-text: #2196F3;
     --hero-footer-background-color: #2F303A;
     --primary-background-color: #F5F5F5;
     --secondary-background-color: #FFFFFF;
+    --command-button-background-color: #F5F4FA;
 }
 
 body {
@@ -14,18 +15,19 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.link {
-    text-decoration: none;
-}
 
-.paragraph {
-    color: var(--secondary-color-text);
-}
-
-h2 {
+.section-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navigation.link.current {
+    color: var(--accent-color-text);
 }
 
 .visually-hidden {
@@ -40,8 +42,6 @@ h2 {
     clip-path: inset(50%);
     margin: -1px;
 }
-
-
 
 /* Header */
 
@@ -58,20 +58,24 @@ h2 {
     
 }
 
-.logo .first-text{
-    color: var(--hover-color-text);
+.first-text-logo{
+    color: var(--accent-color-text);
     font-family: Raleway, sans-serif;
 
 }
 
-.navigation .link {
+.link {
+    text-decoration: none;
+}
+
+.navigation.link {
     color: var(--primary-color-text);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
 }
 
-.address .link {
+.address.link {
     color: var(--secondary-color-text);
     font-style: normal;
     font-weight: 500;
@@ -79,9 +83,9 @@ h2 {
     line-height: 1.14;
 }
 
-.navigation .link:hover,
-.address .link:hover {
-    color: var(--hover-color-text);
+.link:hover,
+.link:focus {
+    color: var(--accent-color-text);
 }
 
 
@@ -89,11 +93,11 @@ h2 {
 /* Main block */
 
 /* Hero */
-.hero {
+.hero-section {
     background-color: var(--hero-footer-background-color);
 }
 
-.hero .title{
+.hero-title{
     color: var(--white-color-text);
     font-weight: 900;
     font-size: 44px;
@@ -102,46 +106,46 @@ h2 {
     text-transform: uppercase;
 }
 
-.hero .link{
-    background-color: var(--hover-color-text);
+.hero-button{
+    background-color: var(--accent-color-text);
     color: var(--white-color-text);
+    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
 
 /* description */
-.description .title {
+.description-title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.description .paragraph {
+.description-subtitle {
+    color: var(--secondary-color-text);
     font-size: 14px;
     line-height: 1.71;
 }
 
 /* Command */
 .command {
-    background-color: #F5F4FA;
+    background-color: var(--command-button-background-color);
 }
 
 .card {
     background-color: var(--secondary-background-color);
 }
 
-.command .title {
+.command-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
 
-.command .paragraph {
+.command-subtitle {
+    color: var(--secondary-color-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -157,7 +161,7 @@ h2 {
     color: var(--white-color-text);
 }
 
-.address .street {
+.address-street {
     color: var(--white-color-text);
     font-style: normal;
     font-weight: 400;
@@ -170,14 +174,34 @@ h2 {
 
 /* portfilio */
 
-.portfolio .title {
+
+.portfolio-button {
+    color: var(--primary-color-text);
+    background-color: var(--command-button-background-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color-text);
+    color: var(--white-color-text);
+}
+
+
+.card-title {
     color: var(--primary-color-text);
     font-size: 18px;
     line-height: 2;
 }
 
-.portfolio .paragraph {
+.card-subtitle {
+    color: var(--secondary-color-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
+
